@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+height:100%;
+width:100%;
+font-family: 'poppins', sans-serif;
+color: #222;
+scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0.50rem;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}   
+
+::-webkit-scrollbar-thumb {
+    background: #e6ecff;
+}
+/* End Scrollbar */
+
+
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    -webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.16);
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+
+  .navbar .navbar-nav .nav-link:focus,
+  .navbar .navbar-nav .nav-link:hover,    
+  .navbar .navbar-nav .nav-link.active {
+      color: #3457a9;
+  }
+
+  /* .navbar-nav {
+      width: 40%;
+  } */
+  
+  a.nav-link {
+    margin-right: 1em;  
+  }
+
+  @media (max-width: 500px) {
+      .navbar {
+          /* position: fixed; */
+          top: 0;
+      }
+
+    
+  }
+/* End Navbar */
+
+
+
+/* Carousel */
+#slides {
+    padding-top: 4rem;
+}
+/* End Carousel */
+
+
+
+/* Content */
+#content {
+    max-width: 85%;
+    padding-top: 3em;
+}
+
+#lead {
+    font-size: 2em;
+    color: #3457a9;
+}
+
+#isi {
+    color:  #979aa1;
+    padding-top: -4em;
+}
+#cnbot {
+    width: 100%;
+    padding: 2em;   
+}
+
+.worth {
+    text-align: justify;
+    color:  #47536e;
+}
+
+#isi-worth {
+    color:  #979aa1;
+}
+
+@media (max-width: 500px) {
+        #content {
+            max-width: 100%;
+        }
+        #lead {
+            font-size: x-large;
+        }
+        .worth {
+            text-align: justify;
+        }
+    }
+/*======================            End Content */
+
+
+
+/*==================                News */
+#news {
+    max-width: 80%;
+    padding-top: 3em;
+}
+
+.card {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.26);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.26);
+    transition: 0.1s;
+}
+
+.card:hover {
+    -webkit-box-shadow: 4px 4px 5px 2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 4px 4px 5px 2px rgba(0,0,0,0.16);
+    box-shadow: 4px 4px 5px 2px rgba(0,0,0,0.16);
+    transition: 0.5s;
+}
+
+
+@media (max-width: 500px) {
+    #news {
+      max-width: 100%;
+    }
+    #ncap {
+        font-size: x-large;
+    }
+    #judul {
+        font-size: medium;      
+    }
+  }
+/* =================       News */
+
+
+
+/*============               footer */
+
+
+#copyr {
+    padding-bottom: 10px;
+}
+
+/* #copylink {
+    padding-bottom: 3em;
+} */
+    
+.page-footer {
+    font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    min-height: 10em;
+    background-color: #222;
+    
+    /* background-image: url("../../img/bgi.png");  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;         */
+}
+    
+.footer-copyright {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 5em;
+    color: black;
+} 
+
+/* ===========                end footer */
+    
+
+
+
+/* ============     About Us */
+#about {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    padding-right: 3em;
+    width: 90%;
+}
+
+#aboutlogo {
+    max-width: 20em;
+    max-height: 20em;
+}
+
+@media (max-width: 500px){
+    #about {
+        width: 100%;
+    }
+  
+
+}
+/* ============     End About Us */
+
+
+
+
+/* ==============              Product      */
+
+#product {
+    padding: 40px 120px 0px 120px;
+}
+
+#f-title {
+    margin-top: 25px;   
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+}
+
+#mockup {
+    width: auto;
+    height: 27em;
+}
+.product-item {
+    width: 5em;
+    height: 5em;
+}
+
+@media (max-width: 500px) {
+    #product {
+      padding: 20px 60px 0px 60px;
+    }
+    #f-title {
+        text-align: justify;
+        align-items: center;
+    }
+}
+/* ====================              End product */
+
+
+
+
+/* ====================          Contact Us */
+
+#c-us {
+    padding: 20px 120px 0px 120px;
+}
+
+@media (max-width: 500px) {
+    #c-us {
+        padding: 30px 60px 0px 60px;
+    }
+}
+/* ========================        End Contact Us */
+
+
+/* =================                 Partner */
+#p-image {
+    padding: 30px 200px 80px 200px;
+}
+
+.pl {
+    /*margin-left: -50px;*/
+    width: 100%;
+    height: 100%;
+}
+
+#o-partner {
+    font-size: 2em;
+    color: #979aa1
+}
+
+@media (max-width:500px) {
+    #p-image {
+        padding: 0px 0px 0px 0px;
+    }
+}
+/* ========================           End Partner */

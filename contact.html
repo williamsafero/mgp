@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/logo.png" type="image/icon type">
+	<title>Mitrasoft Global Perdana</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+		  if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+		  } else {
+			document.getElementById("navbar").style.top = "-100px";
+		  }
+		  prevScrollpos = currentScrollPos;	
+		}
+		</script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+   <!-- Navigation -->
+	<nav class="navbar shadow p-6 mb-3 navbar-expand-md navbar-light fixed-top scrolling-navbar" id="navbar">
+		<img src="img/mgplogo.png" alt="logo" class="logo ml-3">	
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="nav navbar-nav ml-auto mr-5">
+			<li class="nav-item ">
+			  <a class="nav-link " href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="aboutus.html">About Us</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="product.html">Product</a>
+			</li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact</a>
+			  </li>
+		  </ul>
+		  </div>
+	  </nav>
+<!-- Navigation -->
+
+
+<br><br><br><br>
+<!--Contact Us Form-->
+<div class="container-fluid padding" data-aos="fade-left">
+<button type="button" class="btn btn-lg btn-block btn-outline-primary col-8 offset-2" data-toggle="collapse" data-target="#join"><h3 class="display-7">Send us</h3><h3 class="display-7"> Some Message</h3></button>
+  
+<div id="join" class="collapse">
+<div class="container">
+<form action="http://localhost/kirimmail/sendmail.php" method="post" id="join-us">
+	<div class="form-group row">
+		<div class="col-8 offset-2">	
+		    <br><label for="name">Your Name</label>
+			<input type="text" class="form-control" id="name" name="name" placeholder="Your name.." required><br>
+			<label for="email">Email</label>
+    			<input type="text" class="form-control" id="email" name="email" placeholder="Your email address.." required><br>
+			<label for="subject">Message</label>
+			<textarea id="subject" class="form-control" name="message" placeholder="Write your message to us.." style="height:100px" required></textarea><br>  
+			<button type="submit" name="submit" class="btn btn-primary btn-raised">Submit</button>
+		</div>
+	</div>
+</form>
+</div>
+</div>  
+</div>
+<!--End Contact Us Form-->
+
+<!-- Map -->
+	<div class="container-fluid padding" id="c-us" data-aos="fade-right">
+		
+		<iframe src="https://www.google.com/maps/d/embed?mid=1q4NiCxcgyWSn5Rr1TeMp_c4b9wG-ELE9" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+
+
+	</div>
+<!-- End Map -->
+
+
+
+
+
+<br><br><br>
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4" id="contact">
+		<!-- Footer Links -->
+		<div class="container-fluid text-center text-md-left" style="width: 80%;" id="ccontact">
+		  <!-- Grid row -->
+		  <div class="row">
+			<!-- Grid column -->
+			<div class="col-md-6 mt-md-0 mt-3">
+			  <!-- Content -->
+			  <h5 class="text-uppercase" style="color:#222"><i class="fas fa-map-pin"></i> Address</h5>
+			  <p>Ruko Pura Bojonggede, Jalan Madura 1 No.34 Kel.Tajurhalang, Kec.Tajurhalang, Bogor, Jawa Barat 16320.</p>
+			</div>
+			<!-- Grid column -->
+			<hr class="clearfix w-100 d-md-none pb-3">
+			<!-- Grid column -->
+			<div class="col-md-3 mb-md-0 mb-3">
+			  <!-- Links -->
+			  <h5 class="text-uppercase" style="color:#222"><i class="fas fa-phone"></i> Telephone</h5>
+			  <ul class="list-unstyled">
+				<li>
+				  <a>  0812 8334 6263</a>
+				</li>
+			  </ul>
+			</div>
+			<!-- Grid column -->
+			<!-- Grid column -->
+			<div class="col-md-3 mb-md-0 mb-3">
+			  <!-- Links -->
+			  <h5 class="text-uppercase" style="color:#222"><i class="fas fa-envelope"></i> Email</h5>
+	  
+			  <ul class="list-unstyled" >
+				<li>
+				  <a style="color:#222">admin@mglobalperdana.com</a>
+				</li>
+			  </ul>
+			</div>
+			<!-- Grid column -->
+		  </div>
+		  <!-- Grid row -->
+		</div>
+		<!-- Footer Links -->
+	</section>
+		
+		<div id="copyr" class="footer-copyright text-center py-3">© 2020 Copyright	
+		  <a id="copylink" style="color:#222" href="https://mglobalperdana.com/"> PT. Mitrasoft Global Perdana</a>
+		</div>
+	</footer>
+    <!-- End Footer -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
+	<script>
+		AOS.init({
+			offset: 400,
+			duration: 2000
+		});
+ 	</script>
+</body>
+</html>
